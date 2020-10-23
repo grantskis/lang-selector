@@ -7,5 +7,15 @@ $(document).ready(function() {
     const answer4 = parseInt($("input:radio[name=q4]:checked").val());
     const answer5 = parseInt($("input:radio[name=q5]:checked").val());
     $("form").hide();
+    let totalSum = parseInt(answer1 + answer2 + answer3 + answer4 + answer5)
+    console.log(totalSum);
+    
+    if (isNaN(totalSum)) {
+      alert("You need to answer all the questions!")
+      $("form").show();
+    }
+    else if (totalSum === 5) {
+      $("#exactly-five").show();
+    }
   });
 });
