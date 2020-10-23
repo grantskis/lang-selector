@@ -12,8 +12,10 @@ $(document).ready(function() {
       alert("You need to answer all the questions!")
     }
     else {
-      // $("#questionaire").hide();
-      $(".output span").hide();
+      $("#find-it").hide();
+      $("#found-it").show();
+      $("#questionaire").hide();
+      $(".output div").hide();
       if (answer5 === 3) {
         $("#ruby").show();
       }
