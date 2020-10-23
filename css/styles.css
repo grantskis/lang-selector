@@ -8,15 +8,22 @@ body {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bolder;
   background: #ffcad4;
-  width: 80%;
+  min-width: 80%;
   text-transform: capitalize;
+}
+
+.jumbotron p {
+  text-align: left;
+  font-family: initial;
+  font-weight: initial;
+  text-transform: none;
 }
 
 #found-it {
   display: none;
 }
 
-.blurb {
+.intro-blurb {
   margin: 3em auto;
   max-width: 80%;
 }
@@ -31,8 +38,13 @@ body {
   margin-top: -0.5em;
 }
 
-.question, button {
+.question {
   margin: auto;
+}
+
+button {
+  margin: auto;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 input {
@@ -46,4 +58,9 @@ input {
 input:checked {
   background: #f4acb7;
   border: .1em solid #ffcad4;
+}
+
+a, a:hover {
+  color: #54ac96;
+  font-weight: bold;
 }
