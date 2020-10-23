@@ -17,4 +17,7 @@ input {
 
 input:checked {
   background: darkred;
+  border: .1em solid darkslategray;
 }
+
+
