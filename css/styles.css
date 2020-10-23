@@ -3,15 +3,12 @@ body {
 }
 
 .jumbotron {
+  margin: auto;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bolder;
   background: #ffcad4;
   width: 80%;
-  margin: auto;
-}
-
-h1 {
   text-transform: capitalize;
 }
 
@@ -19,10 +16,14 @@ h1 {
   display: none;
 }
 
-
+.blurb {
+  margin: 3em auto;
+  max-width: 80%;
+}
 
 .output div {
   display: none;
+  background: none;
 }
 
 .q-answers {
@@ -30,10 +31,9 @@ h1 {
   margin-top: -0.5em;
 }
 
-.question {
-  background: yellow;
+.question, button {
+  margin: auto;
 }
-
 
 input {
   appearance: none;
@@ -47,5 +47,3 @@ input:checked {
   background: #f4acb7;
   border: .1em solid #ffcad4;
 }
-
-
