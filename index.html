@@ -7,23 +7,31 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <title>
-    ### Page Title ###
+    The Web Knows All...
   </title>
 </head>
 <body>
-  <div class="container"">
+  <div class="container">
     <div class="jumbotron">
-      <h1 id="find-it">
+      <h1 class="find-it">
         Find your future &mdash; in coding!
       </h1>
       <h1 id="found-it">
         Your future can be found in...
       </h1>
     </div>
+    <div class="container blurb find-it">
+      <p>
+        Have you decided that you want to learn how to code, but don't know where to start? Have you gotten lost trying to pick out the differences between languages, been overwhelmed by your options, and simply given up all hope of ever making a decision? Never fear! Thanks to the coersive power of aribitrary declarations, now <strong>you</strong> can have your life path determined for you in one easy step!
+      </p>
+      <p>
+        Please answer the questions below to determine your lot in life &mdash; the code to your future!
+      </p>
+    </div>
     <form id="questionaire"> 
-      <div class="question-1-monster col-md-8"> <!-- MONSTER QUESTION -->
+      <div class="question q-1-monster col-md-8">
         <p>
-          Which is your favorite "behold the hubris of man, destroyed by their own creation" monster?
+          Which is your favorite "behold the hubris of man, who will be destroyed by their own creation"-type monster?
         </p>
         <div class="offset-sm-1 q-answers">
           <div class="radio">
@@ -46,22 +54,21 @@
           </div>
         </div>
       </div>
-        
-      <div class="question-2-zodiac col-md-8"> <!-- ZODIAC QUESTION -->
+      <div class="question q-2-zodiac col-md-8">
         <p>
           What's your approach to life?
         </p>
         <div class="offset-sm-1 q-answers">
           <div class="radio">
-          <label for="q2-a1">
-            <input id="q2-a1" type="radio" name="q2" value="1">
-            🔥 You push through any obstacle with overwhelming force. You command your own fate!
-          </label>
+            <label for="q2-a1">
+              <input id="q2-a1" type="radio" name="q2" value="1">
+              🔥 You push through any obstacle with overwhelming force. You command your own fate!
+            </label>
           </div>
           <div class="radio">
             <label for="q2-a2">
               <input id="q2-a2" type="radio" name="q2" value="2">
-            🍃 You relax and let the world take you where you need to go. You'll leave things to fate.
+              🍃 You relax and let the world take you where you need to go. You'll leave things to fate.
             </label>
           </div>
           <div class="radio">
@@ -72,8 +79,7 @@
           </div>
         </div>
       </div>
-    
-      <div class="question-3-pet col-md-8"> <!-- PET QUESTION -->
+      <div class="question q-3-pet col-md-8">
         <p>
           If you could transform into any animal, which would you pick?
         </p>
@@ -98,8 +104,7 @@
           </div>
         </div>      
       </div>
-
-      <div class="question-4-time col-md-8">  <!-- TIME OF DAY QUESTION -->
+      <div class="question q-4-time col-md-8">
         <p>
           What time of day do you consider to be "your time" ?
         </p>
@@ -124,8 +129,7 @@
           </div>
         </div>
       </div>
-
-      <div class="question-5-holiday col-md-8"> <!-- HOLIDAY QUESTION -->
+      <div class="question q-5-holiday col-md-8">
         <p>
           Which is your favorite holiday?
         </p>
@@ -150,19 +154,44 @@
           </div>
         </div>
       </div>
-
-      
-
       <button type="submit" class="btn-danger btn-block btn-lg  col-md-8">
         Decide my fate!
       </button>
     </form>
     <div class="output">
       <p>
-        <div id="ruby" class="jumbotron">RUBY</div>
-        <div id="python">PYTHON</div>
-        <div id="rust">RUST</div>
-        <div id="javascript">javascript</div>
+        <div id="ruby" class="jumbotron output">
+          <h2>
+            Ruby
+          </h2>
+          <p>
+
+          </p>
+        </div>
+        <div id="python" class="jumbotron output">
+          <h2>
+            Python
+          </h2>
+          <p>
+
+          </p>
+        </div>
+        <div id="rust" class="jumbotron output">
+          <h2>
+            Rust
+          </h2>
+          <p>
+
+          </p>
+        </div>
+        <div id="javascript" class="jumbotron output">
+          <h2>
+            JavaScript
+          </h2>
+          <p>
+
+          </p>
+        </div>
       </p>
     </div>
   </div>
