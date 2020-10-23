@@ -1,11 +1,11 @@
 $(document).ready(function() {
   $("#questionaire").submit(function(event) {
     event.preventDefault();
-    const answer1 = parseInt($("input:radio[name=q1]:checked").val()); // Monster
-    const answer2 = parseInt($("input:radio[name=q2]:checked").val()); // Zodiac
-    const answer3 = parseInt($("input:radio[name=q3]:checked").val()); // Animal
-    const answer4 = parseInt($("input:radio[name=q4]:checked").val()); // Time
-    const answer5 = parseInt($("input:radio[name=q5]:checked").val()); // Holiday
+    const answer1 = parseInt($("input:radio[name=q1-monster]:checked").val());
+    const answer2 = parseInt($("input:radio[name=q2-zodiac]:checked").val()); 
+    const answer3 = parseInt($("input:radio[name=q3-animal]:checked").val()); 
+    const answer4 = parseInt($("input:radio[name=q4-time]:checked").val()); 
+    const answer5 = parseInt($("input:radio[name=q5-holiday]:checked").val());
 
     let totalSum = parseInt(answer1 + answer2 + answer3 + answer4 + answer5)
 
@@ -22,9 +22,7 @@ $(document).ready(function() {
         $("#ruby").show();
       } else if (answer3 === 2) {
         $("#python").show();
-      } else if (answer1 === 2) {
-        $("#rust").show();
-      } else if (totalSum <= 11 && totalSum >=9 ) {
+      } else if (totalSum <= 11 && totalSum >=8 ) {
         $("#javascript").show();
       } else if (totalSum > 11) {
         $("#ruby").show();
