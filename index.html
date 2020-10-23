@@ -11,12 +11,17 @@
   </title>
 </head>
 <body>
-  <div class="container">
-    <h1>
-      ### Header Text ###
-    </h1>
+  <div class="container"">
+    <div class="jumbotron">
+      <h1 id="find-it">
+        Find your future &mdash; in coding!
+      </h1>
+      <h1 id="found-it">
+        Your future can be found in...
+      </h1>
+    </div>
     <form id="questionaire"> 
-      <div class="question 1"> <!-- MONSTER QUESTION -->
+      <div class="question-1-monster col-md-8"> <!-- MONSTER QUESTION -->
         <p>
           Which is your favorite "behold the hubris of man, destroyed by their own creation" monster?
         </p>
@@ -42,7 +47,7 @@
         </div>
       </div>
         
-      <div class="question 2"> <!-- ZODIAC QUESTION -->
+      <div class="question-2-zodiac col-md-8"> <!-- ZODIAC QUESTION -->
         <p>
           What's your approach to life?
         </p>
@@ -68,7 +73,7 @@
         </div>
       </div>
     
-      <div class="question 3"> <!-- PET QUESTION -->
+      <div class="question-3-pet col-md-8"> <!-- PET QUESTION -->
         <p>
           If you could transform into any animal, which would you pick?
         </p>
@@ -94,7 +99,7 @@
         </div>      
       </div>
 
-      <div class="question 4">  <!-- TIME OF DAY QUESTION -->
+      <div class="question-4-time col-md-8">  <!-- TIME OF DAY QUESTION -->
         <p>
           What time of day do you consider to be "your time" ?
         </p>
@@ -120,7 +125,7 @@
         </div>
       </div>
 
-      <div class="question 5"> <!-- HOLIDAY QUESTION -->
+      <div class="question-5-holiday col-md-8"> <!-- HOLIDAY QUESTION -->
         <p>
           Which is your favorite holiday?
         </p>
@@ -148,16 +153,16 @@
 
       
 
-      <button type="submit" class="btn-danger">
+      <button type="submit" class="btn-danger btn-block btn-lg  col-md-8">
         Decide my fate!
       </button>
     </form>
     <div class="output">
       <p>
-        <span id="ruby">RUBY</span>
-        <span id="python">PYTHON</span>
-        <span id="rust">RUST</span>
-        <span id="javascript">javascript</span>
+        <div id="ruby" class="jumbotron">RUBY</div>
+        <div id="python">PYTHON</div>
+        <div id="rust">RUST</div>
+        <div id="javascript">javascript</div>
       </p>
     </div>
   </div>
