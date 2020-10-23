@@ -1,4 +1,27 @@
-.output span {
+body {
+  background: #ffe5d9;
+}
+
+.jumbotron {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  background: #ffcad4;
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  text-transform: capitalize;
+}
+
+#found-it {
+  display: none;
+}
+
+
+
+.output div {
   display: none;
 }
 
@@ -7,17 +30,22 @@
   margin-top: -0.5em;
 }
 
+.question {
+  background: yellow;
+}
+
+
 input {
   appearance: none;
   border-radius: 50%;
   width: 1em;
   height: 1em;
-  border: .1em dashed black;
+  border: .1em dashed #f4acb7;
 }
 
 input:checked {
-  background: darkred;
-  border: .1em solid darkslategray;
+  background: #f4acb7;
+  border: .1em solid #ffcad4;
 }
 
 
