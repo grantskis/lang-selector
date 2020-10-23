@@ -14,7 +14,6 @@ $(document).ready(function() {
     else {
       $("#questionaire").hide();
       $(".output span").hide();
-      $(".output #redo").show();
       if (totalSum < 10 ) {
         $("#low-end").show();
       }
